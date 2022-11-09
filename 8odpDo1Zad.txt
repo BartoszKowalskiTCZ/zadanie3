@@ -8,8 +8,8 @@
 
 5 SELECT * FROM `customers` WHERE NOT `country`="USA" OR NOT `country`="Germany";
 
-6 SELECT * FROM `customers` WHERE 1 ORDER BY `country` ASC;
+6 SELECT * FROM `customers` ORDER BY `country` ASC;
 
-7 SELECT * FROM `customers` WHERE 1 ORDER BY `country` DESC;
+7 SELECT * FROM `customers` ORDER BY `country` DESC;
 
-8 SELECT * FROM `customers` WHERE 1 ORDER BY `country` DESC, `customer_name` ASC;
+8 SELECT * FROM `customers` ORDER BY `country` DESC, `customer_name` ASC;
