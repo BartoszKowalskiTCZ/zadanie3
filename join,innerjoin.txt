@@ -1,0 +1,7 @@
+JOIN, INNER JOIN, LEFT JOIN, RIGHT JOIN, Self Join
+
+1 SELECT * FROM customers JOIN orders ON orders.customer_id=customers.id;
+2 SELECT * FROM customers JOIN orders ON orders_details.id=customers.id
+3
+4
+5
