@@ -1,0 +1,3 @@
+1. SELECT order.id, order.quantity CASE WHEN order.quantity > 30 THEN 'Liczba sztuk jest wieksza niz 30' WHEN order.quantity < 30 THEN 'Liczba sztuk jest mniejsza niz 30' WHEN quantity 'Liczba sztuk jest rowna 30' END AS quantity FROM orders_details AS order;
+
+2. SELECT customers.customer_name, customers.city, customers.country FROM customers ORDER BY CASE WHEN customer.city = NULL THEN customers.country ELSE customers.city END;
