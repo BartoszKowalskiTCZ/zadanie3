@@ -1,2 +1,2 @@
-1 SELECT customer_id, employee_id, order_date, shipper_id FROM orders DESC LIMIT 10;
-2 SELECT customer_id, employee_id, order_date, shipper_id FROM orders LIMIT 10 OFFSET 19;
+1 SELECT `customer_id`, `employee_id`, `order_date`, `shipper_id` FROM `orders` DESC LIMIT 10;
+2 SELECT `customer_id`, `employee_id`, `order_date`, `shipper_id` FROM `orders` LIMIT 10 OFFSET 19;

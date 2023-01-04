@@ -1,6 +1,6 @@
 JOIN, INNER JOIN, LEFT JOIN, RIGHT JOIN, Self Join
-1 SELECT * FROM customers JOIN orders ON orders.customer_id=customers.id;
-2 SELECT * FROM customers JOIN orders ON orders_details.id=customers.id
-3 SELECT customers, orders FROM `customers` AS customers INNER JOIN orders AS orders ON customers_id = orders.customer_id;
-4 SELECT orders, employees FROM orders RIGHT JOIN employees ON order.employee_id=employees.id
+1 SELECT * FROM `customers` JOIN `orders` ON orders.customer_id=customers.id;
+2 SELECT * FROM `customers` JOIN `orders` ON orders_details.id=customers.id
+3 SELECT `customers`, `orders` FROM `customers` AS customers INNER JOIN orders AS orders ON customers_id = orders.customer_id;
+4 SELECT `orders`, `employees` FROM `orders` RIGHT JOIN employees ON order.employee_id=employees.id
 5

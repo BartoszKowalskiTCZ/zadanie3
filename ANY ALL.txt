@@ -1,7 +1,7 @@
 ANY, ALL
-1 SELECT product.name FROM products JOIN orders_details ON product.id = order.product_id WHERE order.id =
+1 SELECT `product.name` FROM `products` JOIN orders_details ON product.id = order.product_id WHERE order.id =
 ANY(SELECT order.id FROM orders_details WHERE order.quantity = 10)
-2 SELECT product.name FROM products JOIN orders_details ON product.id = order.product_id WHERE order.id =
+2 SELECT `product.name` FROM `products` JOIN orders_details ON product.id = order.product_id WHERE order.id =
 ANY(SELECT order.id FROM orders_details WHERE order.quantity > 99)
-3 SELECT ALL name FROM products
-4 SELECT name FROM products WHERE id = ALL (SELECT product_id FROM orders_details WHERE quantity = 10)
+3 SELECT ALL `name` FROM `products`
+4 SELECT `name` FROM `products` WHERE id = ALL (SELECT product_id FROM orders_details WHERE quantity = 10)
