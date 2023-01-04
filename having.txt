@@ -1,0 +1,2 @@
+1. SELECT * FROM `customers` GROUP BY `country` HAVING COUNT(country) > 5
+2. SELECT `customer_name`, COUNT(orders.customer_id) FROM `customers` JOIN `orders` ON `orders.customer_id` = `customers.id` GROUP BY `customer_name` HAVING COUNT(orders.customer_id) BETWEEN 2 AND 4
