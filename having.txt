@@ -1,2 +1,13 @@
 1. SELECT * FROM `customers` GROUP BY `country` HAVING COUNT(country) > 5
+
 2. SELECT `customer_name`, COUNT(orders.customer_id) FROM `customers` JOIN `orders` ON `orders.customer_id` = `customers.id` GROUP BY `customer_name` HAVING COUNT(orders.customer_id) BETWEEN 2 AND 4
+
+3. SELECT last_name, first_name, COUNT(employee_id) FROM `employees` 
+JOIN orders ON orders.employee_id = employees.id GROUP BY last_name HAVING COUNT(employee_id) > 10
+
+4. SELECT last_name, first_name, COUNT(orders.employee_id) FROM `employees`
+ JOIN `orders` ON order.employee_id = employee.id GROUP BY last_name HAVING COUNT(orders.employee_id) > 25 AND (last_name = "Davolio" OR last_name="Fuller")
+
+5. SELECT suppliers.name FROM suppliers WHERE EXISTS (SELECT name FROM products WHERE price < 20 AND suppliers.id = products.supplier_id)
+
+6. SELECT suppliers.name FROM suppliers WHERE EXISTS (SELECT name FROM products WHERE price = 22 AND suppliers.id = products.supplier_id)
